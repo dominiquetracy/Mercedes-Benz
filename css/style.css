@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:'Playfair Display', serif !important;
+  font-size: 10px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+.wrapper {
+ overflow-x: hidden;
+}
+
+ul , ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+
+
+/* REOCCURING       */
+.re-heading {
+  margin: 75px auto 25px auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.re-heading-2 {
+  text-align: left;
+  margin-top: 75px;
+}
+.re-heading-2::before {
+  content: "";
+  border-left: 2px solid #176db7;
+  margin-right: 10px;
+}
+.re-heading::after {
+  content:"";
+  display:block;
+  width: 2em;
+  max-width:70%;
+  border-bottom: 0.1em solid #176db7;
+  margin: .5em auto 0;
+}
+.re-subheading {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
+.text-col h6::before {
+  content: "";
+  border-left: 2px solid #176db7;
+  margin-right: 10px;
+}
+.button {
+  background-color: #176db7;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+:target:before {
+  content:"";
+  display:block;
+  height:10px;
+  margin:-60px 0 0;
+}
+
+
+
+/* NAVIGATION     */
+.d-flex {
+  margin-bottom: 0;
+}
+.nav-link {
+  font-size: 14px;
+}
+.nav-link:hover {
+  color: #176db7 !important;
+}
+nav {
+  background-color: black;
+}
+nav a {
+  color: snow !important;
+}
+
+
+
+/* HEADER      */
+.carousel .item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+.header-text-1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+}
+.header-text-1 p span {
+  content: "\2015";
+  color: white;
+}
+.header-text-1 h1 {
+  font-weight: lighter;
+}
+.header-text-1 p {
+  font-size: 18px;
+}
+
+
+
+
+/* PRODUCT CARDS        */
+.section1-container p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+.product-card {
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+.product-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 5px;
+  background: #fff;
+}
+.product-thumbnail img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.product-details {
+  padding: 5px;
+}
+.product-category {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 18px;
+}
+.product-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.product-details h4 a:hover {
+  color: #fbb72c;
+}
+.product-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: #999;
+}
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  font-size: 13px;
+}
+.product-bottom-details a {
+  color: #176db7 !important;
+}
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+.product-price h5 {
+  color: #176db7;
+  font-weight: 600;
+}
+.product-price p {
+  font-size: 12px;
+}
+.product-links {
+  text-align: right;
+}
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #176db7;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.product-links a:hover {
+  color: #fbb72c;
+}
+.dealer a {
+  color: #176db7 !important;
+  font-weight: bold;
+  font-size: 13px;
+}
+.card-head {
+  color: #176db7;
+  font-weight: normal;
+}
+.section1-container h3 {
+  letter-spacing: 1px;
+}
+.card {
+  border: none!important;
+}
+.cards-container {
+  padding-top: 50px;
+}
+
+
+/* VIDEO       */
+.video-1 {
+  margin-top: 75px;
+}
+.video-wrapper {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+video {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+
+
+/* DESIGN / INNOVATION         */
+.design2, .innovation4 {
+  margin: 75px auto;
+}
+.text-col {
+  padding-top: 15px;
+}
+.text-col p {
+  font-size: 13px;
+}
+.text-col h5 {
+  color: #176db7;
+}
+/* .innovation1-col, .innovation1-col-2 > p {
+  font-size: 13px;
+} */
+
+
+/* Gallery      */
+.gallery-btn {
+  border-bottom: 1px solid black !important;
+  padding: 12px 40px !important;
+  background-color: white;
+  cursor: pointer;
+}
+.gallery-btn:hover {
+  background-color: #176db7;
+}
+.gallery-btn.active {
+  border-bottom: 1px solid #176db7 !important;
+}
+#myBtnContainer button {
+  font-size: 15px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.show {
+  display: block;
+}
+
+
+
+/* Footer      */
+.footer {
+  margin-top: 75px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #E0E0E0;
+  font-size: 15px;
+}
+footer a {
+  font-family: 'Open Sans', sans-serif;
+  color: gray !important;
+}
+footer a:hover {
+  color:black !important;
+}
+footer img {
+  width: 40px;
+}
+.footer-copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+footer ol {
+  padding-left: 0px;
+}
+footer li {
+  margin: 8px auto;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES    */
+@media only screen and (min-width:320px) and (max-width:425px) {
+  p {
+    font-size: 12px !important;
+  }
+  .carousel-block {
+    display: none;
+  }
+  .header-text-2 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .button {
+    padding: 6px 20px;
+    font-size: 13px;
+  }
+  .product-card {
+    margin: 25px auto;
+  }
+  .d-flex {
+    flex-direction: column !important;
+    padding-left: 0px !important;
+  }
+  .nav-link {
+    padding-left: 0px !important;
+  }
+  .footer ol {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+@media only screen and (min-width:426px) and (max-width:600px) {
+  .carousel-block {
+    display: none;
+  }
+  .header-text-2 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .product-card {
+    margin: 25px auto;
+  }
+  .d-flex {
+    flex-direction: column !important;
+    padding-left: 0px !important;
+  }
+  .d-flex {
+    flex-direction: column !important;
+    padding-left: 0px !important;
+  }
+  .nav-link {
+    padding-left: 0px !important;
+  }
+  .footer ol {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:768px) {
+  .carousel-block {
+    display: none;
+  }
+  .header-text-2 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .d-flex {
+    flex-direction: column !important;
+    padding-left: 0px !important;
+  }
+  .nav-link {
+    padding-left: 0px !important;
+  }
+  .footer ol {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+  .sm-query-header {
+    display: none;
+  }
+  .d-flex {
+    flex-direction: column !important;
+    padding-left: 0px !important;
+  }
+  .nav-link {
+    padding-left: 0px !important;
+  }
+  .footer ol {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .sm-query-header {
+    display: none;
+  }
+  .text-col p {
+    font-size: 15px;
+    margin-top: 15px;
+ }
+   .text-col h6 {
+    margin-top: 15px;
+    font-size: 24px;
+ }
+ .re-heading {
+   font-size: 1.8rem;
+ }
+ .re-heading-2 {
+   font-size: 1.5rem;
+ }
+}
