@@ -377,7 +377,7 @@ footer li {
   p {
     font-size: 12px !important;
   }
-  .carousel-block {
+  .carousel-block , .remove {
     display: none;
   }
   .header-text-2 {
@@ -407,7 +407,7 @@ footer li {
 
 
 @media only screen and (min-width:426px) and (max-width:600px) {
-  .carousel-block {
+  .carousel-block , .remove {
     display: none;
   }
   .header-text-2 {
@@ -434,7 +434,7 @@ footer li {
 }
 
 @media only screen and (min-width:601px) and (max-width:768px) {
-  .carousel-block {
+  .carousel-block , .remove {
     display: none;
   }
   .header-text-2 {
