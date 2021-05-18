@@ -21,17 +21,13 @@ body {
  overflow-x: hidden;
 }
 
-ul , ol {
+#body ul , #body ol {
   list-style: none;
 }
 
-a {
-  text-decoration: none !important;
-  color: black !important;
-}
-
-a:hover {
-  text-decoration: underline !important;
+#body a {
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -88,21 +84,10 @@ a:hover {
   position: relative;
   transition: 0.5s;
 }
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.button:hover {
+  background-color: #11528a;
 }
-.button:hover span {
-  padding-right: 25px;
-}
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+
 :target:before {
   content:"";
   display:block;
@@ -245,11 +230,18 @@ nav a {
 .product-links a:hover {
   color: #fbb72c;
 }
-.dealer a {
-  color: #176db7 !important;
-  font-weight: bold;
-  font-size: 13px;
+#shopping .dealer a {
+  color: #176db7;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
 }
+#shopping .dealer a:hover {
+  color: #11528a;
+  text-decoration: underline;
+  
+}
+
 .card-head {
   color: #176db7;
   font-weight: normal;
